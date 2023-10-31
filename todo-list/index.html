@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<body>
+    <div class="container">
+
+        <div class="card-row">
+            <div class="cards-header">Todo List</div>
+            <div class="card-body">
+                <form id="todo-form" name="form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="todo" id="todo" class="form-control" placeholder="Bir Todo Girin">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger" onclick="ekle()">Todo Ekleyin</button>
+                </form>
+                <hr>
+            </div>
+
+            <div class="card-body">
+                <hr>
+                <h5><b>Todolar</b></h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" name="filter" id="filter" class="form-control" placeholder="Bir Todo Arayın" onkeydown="filtrele()"> 
+                    </div>
+                </div>
+                <hr>
+                
+                <ul class="list-group" id="liste">
+                    <!-- <li class="list-group-item d-flex justify-content-between">
+                        Todo 1
+                        <a href = "#" class ="delete-item">
+                            <i class = "fa fa-remove"></i>
+                        </a>
+
+                    </li>-->
+
+                    
+                </ul>
+                <hr>
+                <button type="button" class="btn btn-dark" onclick="temizle()">Tüm taskları temizleyin</button>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
